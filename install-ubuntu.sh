@@ -13,6 +13,7 @@ git clone https://github.com/dirkjanbuter/AV-Filter-Sepia.git
 git clone https://github.com/dirkjanbuter/AV-Filter-Status.git
 git clone https://github.com/dirkjanbuter/AV-Filter-Clock.git
 git clone https://github.com/dirkjanbuter/AV-Filter-Blocks.git
+git clone https://github.com/dirkjanbuter/AV-Filter-3colors.git
 cd AV-Viewer
 make
 cd ..
@@ -35,6 +36,9 @@ cd AV-Filter-Clock
 make
 cd ..
 cd AV-Filter-Blocks
+make
+cd ..
+cd AV-Filter-3colors
 make
 cd ..
 cd build
