@@ -1,6 +1,9 @@
 #!/bin/bash
-sudo apt -y update
-sudo apt -y install git make libpng16-dev libswscale-dev libavcodec-dev libavformat-dev libsdl2-dev libpng16-dev:i386 libswscale-dev:i386 libavcodec-dev:i386 libavformat-dev:i386 libsdl2-dev:i386
+sudo dpkg --add-architecture i386 
+sudo apt update
+sudo apt install libc6:i386 libncurses5:i386 libstdc++6:i386 
+sudo apt install multiarch-support 
+sudo apt install git make libpng-dev libswscale-dev libavcodec-dev libavformat-dev libsdl2-dev libpng-dev:i386 libswscale-dev:i386 libavcodec-dev:i386 libavformat-dev:i386 libsdl2-dev:i386
 mkdir build
 git clone https://github.com/dirkjanbuter/AV-Viewer.git
 git clone https://github.com/dirkjanbuter/AV-CGI.git
